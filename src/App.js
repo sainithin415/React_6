@@ -1,32 +1,39 @@
 import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Portfolio from './about';
+import ashImage from './images/sai.jpg';
+import ContactInfo from './contact';
 
 function App() {
   return (
     <div className="App">
-      <header className="header bg-primary text-white py-5 text-center">
-        <h1 className="name">Yuvraj Saha</h1>
-        <p className="job-title">Full Stack Developer</p>
+      <header className="App-header">
+        <img src={ashImage} alt="Ash" style={{ width: "200px", height: "200px", borderRadius: "50%" }} />
+        <h1>Sai Nithin </h1>
+        <p>Web Developer / Designer</p>
+        <div className="signature">Welcome!!!</div>
       </header>
-
-      <section className="about py-5">
-        <div className="container">
-          <h2 className="section-title">About Me</h2>
-          <p>
-            I'm a passionate Full Stack Developer with expertise in JavaScript, React, Node.js, and more. I enjoy creating web applications and solving complex problems.
-          </p>
-        </div>
+      <nav className="App-nav">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <section id="about" className="App-section">
+        <h2>About Me</h2>
+        <Portfolio />
       </section>
-
-      <section className="contact py-5 bg-primary text-white">
-        <div className="container">
-          <h2 className="section-title text-white">Contact Me</h2>
-          <p>Email: yuvrajsaha51103@gmail.com</p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/yuvraj-saha-8a5ba61b4/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
-          <p>GitHub: <a href="https://github.com/yuvi511" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
-        </div>
+      <section id="portfolio" className="App-section">
+        <h2>Portfolio</h2>
+       <a href="https://www.linkedin.com/in/sai-nithin-chinnakotla-b22569240/" target="blank">
+       visit linkdn</a><br></br>
       </section>
+      <section id="contact" className="App-section">
+        <h2>Contact</h2>
+        <ContactInfo/>
+      </section>
+      <footer className="App-footer">
+        <p>&copy; {new Date().getFullYear()} All Rights Reserved 🥸</p>
+      </footer>
     </div>
   );
 }
