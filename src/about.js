@@ -54,9 +54,8 @@ function Portfolio() {
       </table>
       <h3>Hobbies</h3>
       <ol style={listStyle} type="i">
-        <li>Playing Cricket</li>
         <li>Watching Movies</li>
-        <li>Badminton</li>
+        <li>Chess</li>
         <li>Coding</li>
       </ol>
       <h3>Education</h3>
